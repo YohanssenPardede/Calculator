@@ -18,9 +18,9 @@ numbers.forEach((number) => {
     })
 });
 
-let prevNumber = '3'
-let calculationOperator = '+'
-let currentNumber = '0'
+let prevNumber = ''
+let calculationOperator = ''
+let currentNumber = ''
 
 numbers.forEach((number) => {
     number.addEventListener("click", (event) => {
@@ -82,6 +82,9 @@ const calculate = () => {
             break
         case "/":
             result = prevNumber / currentNumber
+            break
+        case "%":
+            result = prevNumber * 0.01
             break
         default:
             break
